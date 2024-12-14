@@ -84,10 +84,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌟 Support
 
-- 📧 Email: support@shoracloud.com
+- 📧 Email: support@shora.cloud
 - 💬 Discord: [Join our community](https://discord.gg/shoracloud)
 - 🐦 Twitter: [@ShoraCloud](https://twitter.com/shoracloud)
 
 ## 🏢 About Shora Cloud
 
-Shora Cloud is a headless, API-first commerce platform developed by Shora Technology Inc.
+Shora Cloud is a headless, API-first commerce platform developed by Svenca LTD
