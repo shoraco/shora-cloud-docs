@@ -1,0 +1,95 @@
+---
+title: Introduction to Shora Cloud
+description: Build modern e-commerce experiences with Shora Cloud Platform
+---
+
+# Welcome to Shora Cloud
+
+Shora Cloud is a headless, API-first commerce platform that enables developers to build modern e-commerce experiences. Our platform provides everything you need to create, manage, and scale your e-commerce applications.
+
+## Key Features
+
+### 🚀 API-First Architecture
+
+Build your frontend with any technology stack using our powerful APIs:
+
+```typescript
+import { ShoraCloudClient } from '@shoracloud/sdk';
+
+const client = new ShoraCloudClient({
+  apiKey: process.env.SHORA_API_KEY,
+});
+
+// Fetch products
+const products = await client.products.list({
+  limit: 10,
+  category: 'electronics',
+});
+```
+
+### 💎 Modern UI Components
+
+Create beautiful storefronts using our React components:
+
+```tsx
+import { ProductCard } from '@shoracloud/ui';
+
+function ProductGrid({ products }) {
+  return (
+    <div className="grid grid-cols-3 gap-4">
+      {products.map((product) => (
+        <ProductCard
+          key={product.id}
+          title={product.name}
+          price={product.price}
+          imageUrl={product.image}
+          onAddToCart={() => handleAddToCart(product)}
+        />
+      ))}
+    </div>
+  );
+}
+```
+
+### 🔒 Enterprise-Grade Security
+
+- End-to-end encryption
+- Role-based access control
+- Fraud prevention
+- PCI DSS compliance
+
+### 📈 Real-time Analytics
+
+Monitor your business performance with real-time analytics:
+
+```typescript
+// Get sales analytics
+const analytics = await client.analytics.getSales({
+  startDate: '2024-01-01',
+  endDate: '2024-12-31',
+  interval: 'month',
+});
+
+// Track custom events
+await client.analytics.trackEvent({
+  name: 'product_viewed',
+  properties: {
+    productId: '123',
+    category: 'electronics',
+  },
+});
+```
+
+## Getting Started
+
+1. [Create an account](https://shora.cloud/signup)
+2. [Install the SDK](/docs/installation)
+3. [Follow the quick start guide](/docs/quick-start)
+4. [Explore the API reference](/api/rest)
+
+## Next Steps
+
+- Learn about our [core concepts](/docs/core/architecture)
+- Explore our [UI components](/ui)
+- Join our [Discord community](https://discord.gg/shora-cloud)
+- Follow us on [Twitter](https://twitter.com/shoracloud)
